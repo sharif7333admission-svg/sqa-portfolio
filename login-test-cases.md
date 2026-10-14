@@ -1,28 +1,21 @@
-# Login Page Test Cases
+# SauceDemo Test Execution Report
 
-## TC-001: Login with valid credentials
-- **Precondition:** User has a registered account.
-- **Steps:**
-  1. Open the login page.
-  2. Enter a valid username.
-  3. Enter a valid password.
-  4. Click Login.
-- **Expected Result:** User logs in successfully and reaches the home page.
-- **Status:** Not Executed
+**Application:** SauceDemo  
+**Test type:** Manual testing
 
-## TC-002: Login with an invalid password
-- **Steps:**
-  1. Open the login page.
-  2. Enter a valid username.
-  3. Enter an incorrect password.
-  4. Click Login.
-- **Expected Result:** An appropriate error message appears, and login is denied.
-- **Status:** Not Executed
+| Test Case ID | Scenario | Status | Actual Result |
+|---|---|---|---|
+| TC-001 | Valid login | Pass | User logged in successfully. |
+| TC-002 | Invalid password | Pass | Login denied; error message displayed. |
+| TC-003 | Empty fields | Pass | Username-required error observed; |
 
-## TC-003: Login with empty fields
-- **Steps:**
-  1. Open the login page.
-  2. Leave the username and password empty.
-  3. Click Login.
-- **Expected Result:** Validation messages appear, or login is denied.
-- **Status:** Not Executed
+## Summary
+
+- Total test cases: 3
+- Passed: 3
+- Failed: 0
+- Not tested: 0
+
+## Notes
+
+TC-002 was initially marked Fail but was corrected to Pass because the application behaved as expected for invalid credentials.
